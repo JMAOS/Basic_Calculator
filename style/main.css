@@ -1,0 +1,23 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+body{
+      height: 100%;
+      width: 100%;
+      background-color: black;
+}
+
+#workspaceContainer{
+   
+}
+#calculatorContainer{
+display: grid;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+}
