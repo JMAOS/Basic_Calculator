@@ -5,19 +5,28 @@
   }
 
 body{
-      height: 100%;
-      width: 100%;
-      background-color: black;
+    height: 100%;
+    background-image: url("//img/zack.jpg");
 }
 
-#workspaceContainer{
-   
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
+
 #calculatorContainer{
+width: 25%;
+height: 30%;
 display: grid;
+grid-template-rows: 1fr 1fr;
 }
 
-button {
-    width: 200px;
-    height: 200px;
+#numPad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+
 }
+
