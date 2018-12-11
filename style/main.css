@@ -17,14 +17,30 @@ body{
 }
 
 #calculatorContainer{
-border: 0.5em solid black;
-width: 25%;
-height: 30%;
+background-color: dimgrey;
+border: 0.3em solid black;
+border-radius: 0.25em;
+padding: 0.5em;
+width: 30%;
+height: 50%;
 display: grid;
-grid-template-rows: 1fr 1fr 2fr;
+grid-template-rows: 2fr 1fr 4fr;
+grid-gap: 0.5em;
 }
 
 #calculatorDisplay{
+background-color: white;
+border: 0.3em solid black;
+border-radius: 0.5em;
+}
+
+#calculatorClearCancelPad{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.5em; 
+}
+
+#allCancelBtn, #cancelEntryBtn{
 
 }
 
