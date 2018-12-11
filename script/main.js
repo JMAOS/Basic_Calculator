@@ -1,3 +1,13 @@
+
+let numPad = document.getElementsByClassName("numPad");
+
+numPad.forEach(element => {
+    element.addEventListener("onClick", function(){
+        
+    })
+    
+});
+
 function add(x,y){
     return x+y;
 }
