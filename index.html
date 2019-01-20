@@ -1,44 +1,43 @@
 <html>
   <head>
     <title>Basic calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <script src="script/main.js"></script>
   </head>
-  <body>
+  <body >
     <div id="container">
     <div id="calculatorContainer">
       <div id="calculatorDisplay">
-          <p id="display"></p>
+          <div id="calculatorScreen"></div>
       </div>
       <div id="calculatorClearCancelPad">
-        <button id="allCancelBtn">AC</button>
-        <button id="cancelEntryBtn">CE</button>
+        <button id="allCancelBtn" onclick="resetCalculator()">AC</button>
+        <button id="cancelEntryBtn" onclick="clearScreen()">CE</button>
+        <button id="backSpaceBtn" onclick="removeLastDigit()">BS</button>
       </div>
       <div id="calculatorPad">
-        <button class="numPad" id="sevenBtn">7</button>
-        <button class="numPad" id="eightBtn">8</button>
-        <button class="numPad" id="nineBtn">9</button>
-        <button id="divBtn">/</button>
+        <button data-number="7" class="numPad" id="sevenBtn">7</button>
+        <button data-number="8" class="numPad" id="eightBtn">8</button>
+        <button data-number="9" class="numPad" id="nineBtn">9</button>
+        <button data-operator="div" class="operator" id="divBtn">/</button>
 
-        <button class="numPad" id="fourBtn">4</button>
-        <button class="numPad" id="fiveBtn">5</button>
-        <button class="numPad" id="sixBtn">6</button>
-        <button id="mulBtn">*</button>
+        <button data-number="4" class="numPad" id="fourBtn">4</button>
+        <button data-number="5" class="numPad" id="fiveBtn">5</button>
+        <button data-number="6" class="numPad" id="sixBtn">6</button>
+        <button data-operator="mul" class="operator" id="mulBtn">*</button>
 
-        <button class="numPad" id="oneBtn">1</button>
-        <button class="numPad" id="twoBtn">2</button>
-        <button class="numPad" id="threeBtn">3</button>
-        <button id="subBtn">-</button>
+        <button data-number="1" class="numPad" id="oneBtn">1</button>
+        <button data-number="2" class="numPad" id="twoBtn">2</button>
+        <button data-number="3" class="numPad" id="threeBtn">3</button>
+        <button data-operator="sub" class="operator" id="subBtn">-</button>
 
-        <button class="numPad" id="zeroBtn">0</button>
-        <button class="numPad" id="decimalDotBtn">.</button>
-        <button id="equalBtn">=</button>
-        <button id="addBtn">+</button>
-        
-       
+        <button data-number="0" class="numPad" id="zeroBtn">0</button>
+        <button data-number="." class="numPad" id="decimalDotBtn">.</button>
+        <button id="equalBtn" onclick="getResult()">=</button>
+        <button data-operator="add" class="operator" id="addBtn">+</button>
       </div>
-      
     </div>
   </div>
   </body>

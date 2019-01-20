@@ -17,37 +17,50 @@ body{
 }
 
 #calculatorContainer{
+min-width: 480px;
+min-height: 580px;
+font-size: 400%;
 background-color: dimgrey;
-border: 0.3em solid black;
-border-radius: 0.25em;
-padding: 0.5em;
+border: 0.1em solid black;
+border-radius: 0.15em;
+padding: 0.15em;
 width: 30%;
 height: 50%;
 display: grid;
-grid-template-rows: 2fr 1fr 4fr;
-grid-gap: 0.5em;
+grid-template-rows: 2fr 1fr 5fr;
+grid-gap: 0.1em;
 }
 
 #calculatorDisplay{
+font-family: 'Orbitron', sans-serif;
 background-color: white;
-border: 0.3em solid black;
-border-radius: 0.5em;
+border: 0.1em solid black;
+border-radius: 0.2em;
+}
+
+#calculatorScreen{
+float: right;
+margin-top: 0.35em;
+margin-right: 0.1em;
 }
 
 #calculatorClearCancelPad{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 0.5em; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.1em; 
 }
 
-#allCancelBtn, #cancelEntryBtn{
-
+#allCancelBtn, #cancelEntryBtn, #backSpaceBtn{
+    font-family: 'Orbitron', sans-serif;
 }
 
 #calculatorPad{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0.5em;
-
+    grid-gap: 0.1em;
 }
 
+
+.numPad{
+    font-family: 'Orbitron', sans-serif;
+}
